@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="iconcsss/all.css">
+    <link rel="stylesheet" href="iconcsss/all.min.css">
+</head>
+<body>
+    <!--backround image  start-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/rb.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="icon1 fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="icon1 fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I 'm <span>Rahul</span> Bairwa</h1>
+            </div>
+        </div>
+    </div>
+    <!--backround image  end-->
+    <!-- about section start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/123.png" alt="some error in connection">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> 
+                    <p style="margin-top: 20px;">Hi! I’m Rahul Bairwa. I’m a student of JECRC University, and I want to get into the field of TEcnology.I love Writting codes, Developing New technology and Expolre New things.<br><br>
+
+                        I’ve been working on my portfolio since high school, but now it’s time to show the world what I’ve got. And that’s why I’ve created this website—so you can see my work so far and get a sense of who I am as a writer.<br><br>
+                        
+                        I can assure you that i am the one person among them in the world who has and always have that speciality..and i can be the person who gives assurance that if i work for you i will give all my efforts and knowledge to make company a fortune among the stars.
+
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>C</span><br><br>C++ </li>
+                            <li><span>sql</span><br><br>html,css</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2022</span><br><br>BCA form tirupati college of technical education </li>
+                            <li><span>2019</span> <br><br>12th from RBSE BOARD</li>
+                            <li><span>2017</span> <br><br>10th from RBSE BOARD </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section end -->
+    <!-- portfolio section start -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/132.png" alt="">
+                    <div class="layer">
+                        <h3>Food order Website</h3>
+                        <p>This Website allows you to order food and manage easily by the owner. Every order store in database and every food related task done easily with this Website</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/s12.png" alt="">
+                    <div class="layer">
+                        <h3>Spotify clone</h3>
+                        <p>This is the clone of Spotify app . it is a mini project which was develope with the help of java.it is use to play and listen music</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/c12.png" alt="">
+                    <div class="layer">
+                        <h3>Clouth order Website</h3>
+                        <p>This Website allows you to order clouth and manage easily by the owner. Every order store in database and every clouth related task done easily with this Website</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div> 
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+    <!-- portfolio section end -->
+    <!-- Contact start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fab fa-facebook"></i> rahulkundra2002@gmail.com</p>
+                    <p> <i class="fab fa-facebook"></i>8851190243</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <textarea name="message"  rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright@ RAHUL</p>
+        </div>
+    </div>
+    <!-- Contact end -->
+    <script src="iconjs/all.js"></script>
+    <script src="iconjs/all.min.js"></script>
+    <script>
+        var tablinks=document.getElementsByClassName('tab-links');
+        var tabcontents=document.getElementsByClassName('tab-content');
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link")
+            }
+            
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        
+        var sidemenu=document.getElementById('sidemenu');
+        function openmenu()
+        {
+            sidemenu.style.right='0';
+        }
+        function closemenu()
+        {
+            sidemenu.style.right='-200px';
+        }
+    </script>
+</body>
+</html>
